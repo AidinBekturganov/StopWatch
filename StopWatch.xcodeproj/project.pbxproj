@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE67636E24A39C9300687572 /* WatchWithEndViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE67636D24A39C9300687572 /* WatchWithEndViewController.swift */; };
 		CE6A3D0E24A18C6500D6F3CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6A3D0D24A18C6500D6F3CD /* AppDelegate.swift */; };
 		CE6A3D1024A18C6500D6F3CD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6A3D0F24A18C6500D6F3CD /* SceneDelegate.swift */; };
 		CE6A3D1224A18C6500D6F3CD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6A3D1124A18C6500D6F3CD /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CE67636D24A39C9300687572 /* WatchWithEndViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchWithEndViewController.swift; sourceTree = "<group>"; };
 		CE6A3D0A24A18C6500D6F3CD /* StopWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StopWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE6A3D0D24A18C6500D6F3CD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE6A3D0F24A18C6500D6F3CD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -60,6 +62,7 @@
 				CE6A3D0F24A18C6500D6F3CD /* SceneDelegate.swift */,
 				CE6A3D1124A18C6500D6F3CD /* ViewController.swift */,
 				CE6A3D1324A18C6500D6F3CD /* Main.storyboard */,
+				CE67636D24A39C9300687572 /* WatchWithEndViewController.swift */,
 				CE6A3D1624A18C6600D6F3CD /* Assets.xcassets */,
 				CE6A3D1824A18C6600D6F3CD /* LaunchScreen.storyboard */,
 				CE6A3D1B24A18C6600D6F3CD /* Info.plist */,
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE67636E24A39C9300687572 /* WatchWithEndViewController.swift in Sources */,
 				CE6A3D1224A18C6500D6F3CD /* ViewController.swift in Sources */,
 				CE6A3D0E24A18C6500D6F3CD /* AppDelegate.swift in Sources */,
 				CE6A3D1024A18C6500D6F3CD /* SceneDelegate.swift in Sources */,
