@@ -20,16 +20,24 @@ class ViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var stopButtonAndReset: UIButton!
     @IBOutlet weak var startButtonToEnableReset: UIButton!
-       
+    @IBOutlet weak var switchStartAndStop: UISwitch!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        
+        
+    }
     
     @IBAction func stopButton(_ sender: UIButton) {
         
         
-        if time.isValid{
+        if time.isValid || stopButtonAndReset.currentBackgroundImage == #imageLiteral(resourceName: "clock_1x"){
             let currentTime = "\(hours):\(minutes):\(seconds) is lap №\(savedPauses.count + 1)"
             savedPauses.append(currentTime)
             let indexPath = IndexPath(row: savedPauses.count - 1, section: 0)
             tableView.insertRows(at: [indexPath], with: .automatic)
+            
         } else if flagForResetEnable{
             time.invalidate()
             (hours, minutes, seconds) = (0, 0, 0)
@@ -37,7 +45,7 @@ class ViewController: UIViewController {
             stopButtonAndReset.isEnabled = false
             savedPauses = []
             tableView.reloadData()
-            
+            stopButtonAndReset.setBackgroundImage(#imageLiteral(resourceName: "reload1x"), for: .normal)
 
         }
         
@@ -48,15 +56,16 @@ class ViewController: UIViewController {
   
     
     @IBAction func continueButton(_ sender: UIButton) {
-        if !time.isValid || startButtonToEnableReset.currentBackgroundImage == #imageLiteral(resourceName: "Button-Normal") {
+        if !time.isValid || startButtonToEnableReset.currentBackgroundImage == #imageLiteral(resourceName: "play-button copy") {
             time = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(ViewController.keepTimer), userInfo: nil, repeats: true)
-            startButtonToEnableReset.setBackgroundImage(#imageLiteral(resourceName: "Button-Highlighted"), for: .normal)
+            startButtonToEnableReset.setBackgroundImage(#imageLiteral(resourceName: "pause1x"), for: .normal)
+            stopButtonAndReset.setBackgroundImage(#imageLiteral(resourceName: "clock_1x"), for: .normal)
             stopButtonAndReset.isEnabled = true
         } else {
                 time.invalidate()
             flagForResetEnable = true
-            startButtonToEnableReset.setBackgroundImage(#imageLiteral(resourceName: "Button-Normal"), for: .normal)
-                
+            startButtonToEnableReset.setBackgroundImage(#imageLiteral(resourceName: "play-button copy"), for: .normal)
+            stopButtonAndReset.setBackgroundImage(#imageLiteral(resourceName: "reload1x"), for: .normal)
         }
     }
     

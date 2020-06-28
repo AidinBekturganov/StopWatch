@@ -1,15 +1,17 @@
 {
   "images" : [
     {
+      "filename" : "pause1x.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "Button-Normal@2x.png",
+      "filename" : "pause2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
+      "filename" : "pause3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

@@ -1,15 +1,17 @@
 {
   "images" : [
     {
+      "filename" : "clock_1x.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "Button-Highlighted@2x.png",
+      "filename" : "clock_2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
+      "filename" : "clock_3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }
